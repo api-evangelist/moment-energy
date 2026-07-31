@@ -1,8 +1,25 @@
 aid: moment-energy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/moment-energy.png
 name: Moment Energy
-description: 'Moment Energy is a company surfaced as a portfolio company of version-one-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: energy. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Moment Energy is a Coquitlam, British Columbia clean-energy company that
+  builds battery energy storage systems (BESS) from repurposed electric-vehicle batteries
+  for commercial and industrial customers. Its Luna BESS is described as the first
+  repurposed-battery system to achieve UL 1973, UL 9540, and UL 9540A certifications,
+  and is applied to demand-charge management, grid backup, EV-charging support, and
+  energy arbitrage across data centers, public institutions, transportation, food &
+  beverage, manufacturing, and forestry. Moment Energy is a hardware and energy-services
+  company and publishes no public developer API surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/moment-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Energy
+- Battery Storage
+- Energy Storage
+- Clean Energy
+- BESS
+- Repurposed Batteries
+- Electric Vehicles
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/moment-energy-domain-security.yml
 - type: Website
   url: https://www.momentenergy.com
+- type: Blog
+  url: https://www.momentenergy.com/blogs
+- type: About
+  url: https://www.momentenergy.com/about
+- type: Contact
+  url: https://www.momentenergy.com/contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/momentenergy
+- type: Twitter
+  url: https://twitter.com/moment_energy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
